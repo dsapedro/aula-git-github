@@ -10,10 +10,11 @@ public class Exercicio3 {
     
     System.out.println("Informe o número do canal: ");
     canal=input.nextDouble();
-    System.out.println("Informe o número de pessoas: ");
-    pessoas=input.nextDouble();
+    
     
     while(canal!=0){
+        System.out.println("Informe o número de pessoas: ");
+    pessoas=input.nextDouble();
         pessoasTotal=pessoas+pessoasTotal;
         if(canal == 4){canal4=canal4+pessoas;}
         else if(canal == 5){canal5=canal5+pessoas;}
@@ -21,8 +22,7 @@ public class Exercicio3 {
         else if(canal == 12){canal12=canal12+pessoas;}
         System.out.println("Informe o número do canal: ");
     canal=input.nextDouble();
-    System.out.println("Informe o número de pessoas: ");
-    pessoas=input.nextDouble();
+    
     }
     System.out.println("Canal 4: "+(canal4*100/pessoasTotal)+"\nCanal 5: "+(canal5*100/pessoasTotal)+"\nCanal 7: "+(canal7*100/pessoasTotal)+"\nCanal 12: "+(canal12*100/pessoasTotal));
     }
