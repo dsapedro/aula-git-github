@@ -15,7 +15,16 @@ public class Exercicio3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        double canal, canal4, canal5, canal7, canal12, pessoas;
+    
+    Scanner input = new Scanner(System.in);
+    
+    System.out.println("Informe o número do canal: ");
+    canal=input.nextDouble();
+    System.out.println("Informe o número de pessoas: ");
+    pessoas=input.nextDouble();
+    
+    while(canal!=0){}
     }
     
 }
