@@ -11,14 +11,15 @@ public class Exercicio2 {
 
         System.out.println("Digite a matricula do aluno: ");
         matricula = input.nextDouble();
-        System.out.println("Digite a primeira nota: ");
+        
+
+        while (matricula > 0) {
+            System.out.println("Digite a primeira nota: ");
         nota1 = input.nextDouble();
         System.out.println("Digite a segunda nota: ");
         nota2 = input.nextDouble();
         System.out.println("Digite a terceira nota: ");
         nota3 = input.nextDouble();
-
-        while (matricula > 0) {
             soma = nota1 + nota2 + nota3;
             media = soma / 3;
             if (media >= 70) {
@@ -32,12 +33,7 @@ public class Exercicio2 {
             }
             System.out.println("Digite a matricula do aluno: ");
             matricula = input.nextDouble();
-            System.out.println("Digite a primeira nota: ");
-            nota1 = input.nextDouble();
-            System.out.println("Digite a segunda nota: ");
-            nota2 = input.nextDouble();
-            System.out.println("Digite a terceira nota: ");
-            nota3 = input.nextDouble();
+            
 
         }
 
