@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	double salario,filhos,mediaSalario=0,mediaFilhos=0,cont=0,salarioTotal=0,filhosTotal=0;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Informe o salário: ");
+        salario=input.nextDouble();
+        
+        
+        while(salario>0){
+            System.out.println("Informe o número de filhos: ");
+            filhos=input.nextDouble();
+            cont++;
+            salarioTotal=salario+salarioTotal;
+            filhosTotal=filhos+filhosTotal;
+            mediaSalario=salarioTotal/cont;
+            mediaFilhos=filhosTotal/cont;
+            
+            System.out.println("Informe o salário: ");
+            salario=input.nextDouble();
+            
+        }
+		System.out.println("A média salárial é: "+mediaSalario+"\nA média de filhos é: "+mediaFilhos);
+	}
+}
