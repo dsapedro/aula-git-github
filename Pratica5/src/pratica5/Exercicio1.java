@@ -10,11 +10,11 @@ public class Exercicio1 {
 
         System.out.println("Digite a nota Final do aulo: ");
         notaFinal = input.nextDouble();
-        System.out.println("Digite o número de faltas: ");
-        faltas = input.nextDouble();
+        
 
         while (notaFinal > 0) {
-            
+            System.out.println("Digite o número de faltas: ");
+        faltas = input.nextDouble();
             if (notaFinal >= 90) {
                 notaMaior++;
             }
@@ -31,8 +31,7 @@ public class Exercicio1 {
             cont++;
             System.out.println("Digite a nota Final do aulo: ");
             notaFinal = input.nextDouble();
-            System.out.println("Digite o número de faltas: ");
-            faltas = input.nextDouble();
+            
         }
         media = soma / cont;
 
