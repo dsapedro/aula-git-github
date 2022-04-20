@@ -17,7 +17,7 @@ public class Exercicio7 {
 			System.out.println("Coeficientes informados incorretamente");
 		if (a == 0 && b != 0) {
 			x1 = -c / b;
-			System.out.println("Esta é uma equação de primeiro grau, o valor da raiz é: " + x);
+			System.out.println("Esta é uma equação de primeiro grau, o valor da raiz é: " + x1);
 			if (a != 0) {
 				delta = (b * b) - (4 * a * c);
 				x1 = (-b + Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
