@@ -17,13 +17,13 @@ public class Exercicio7 {
 			System.out.println("Coeficientes informados incorretamente");
 		else if (a == 0 && b != 0) {
 			x1 = -c / b;
-			System.out.println("Esta é uma equação de primeiro grau, o valor da raiz é: " + x1);
-			if (a != 0) {
+			System.out.println("Esta é uma equação de primeiro grau, o valor da raiz é: " + x1);}
+			else if (a != 0) {
 				delta = (b * b) - (4 * a * c);
 				x1 = (-b + Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
 				x2 = (-b - Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
 				if (delta < 0) {
-					System.out.println("Esta equação não possui raízes reais");
+					System.out.println("Esta equação não possui raízes reais.");
 				} else if (delta == 0) {
 					System.out.println("Esta equação possui duas raízes reais iguais: " + x1);
 				} else {
@@ -31,9 +31,8 @@ public class Exercicio7 {
 							"Esta equação possui duas raízes reais diferentes, raiz 1: " + x1 + "\n raiz 2: " + x2);
 				}
 			}
-		}
+		
 	}
 
 }
 
-}
