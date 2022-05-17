@@ -13,9 +13,9 @@ public class Exercicio7 {
 		c = input.nextDouble();
 		if (a == 0 && b == 0 && c == 0)
 			System.out.println("Igualdade confirmada: 0 = 0");
-		if (a == 0 && b == 0 && c != 0)
+		else if (a == 0 && b == 0 && c != 0)
 			System.out.println("Coeficientes informados incorretamente");
-		if (a == 0 && b != 0) {
+		else if (a == 0 && b != 0) {
 			x1 = -c / b;
 			System.out.println("Esta é uma equação de primeiro grau, o valor da raiz é: " + x1);
 			if (a != 0) {
@@ -33,5 +33,7 @@ public class Exercicio7 {
 			}
 		}
 	}
+
+}
 
 }
