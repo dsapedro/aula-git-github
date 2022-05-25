@@ -3,20 +3,26 @@ import java.util.Scanner;
 public class Exercicio5 {
 
 	public static void main(String[] args) {
-		double x;
+		int numero, maior = 0, menor = 0;
 
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("Informe o valor de x: ");
-		x = input.nextDouble();
-		if (x < -2) {
-			System.out.println("Resultado: " + (2 * x + 2));
-		} else if (x >= -2 && x < 3) {
-			System.out.println("Resultado: 3");
-		} else {
-			System.out.println("Resultado: " + (-x));
+		for (double i = 0; i != -1;) {
+			System.out.println("Digite um número: \nDigite -1 para encerrar.");
+			numero = input.nextInt();
+			if (numero == -1) {
+				i = numero;
+			} else if (maior == 0 && menor == 0) {
+				maior = numero;
+				menor = numero;
+			} else if (numero < menor) {
+				menor = numero;
+			} else if (numero > maior) {
+				maior = numero;
+			}
 		}
-
+		System.out.println("O maior valor é: " + maior);
+		System.out.println("O menor valor é: " + menor);
 	}
 
 }
